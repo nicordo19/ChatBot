@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="questionResponce.js"></script>
     <script defer src="script.js"></script>
-
-    <title>Document</title>
+    <title>Chatbot</title>
   </head>
   <body>
+    <!-- 🟢 HEADER -->
     <header>
       <nav>
         <p>
           <img
             src="chatbot.webp"
-            alt="image d'un rebo humanoisé au visage"
-            style="height: 50px; width: 50px"
+            alt="Image de chatbot"
+            class="logo"
+            height="100px"
+            width="100px"
           />
-          Si vous avez une question n'hésitez pas !<img
+          Si vous avez une question, n'hésitez pas !
+          <img
             src="chatBot2.png"
-            alt="image de dessin chat bot"
-            height="10px"
-            width="10px"
+            alt="Chatbot icon"
+            class="icon"
+            height="20px"
+            width="20px"
           />
         </p>
       </nav>
     </header>
 
+    <!-- 🟢 MAIN CONTENT -->
     <main>
-      <section class="Questions">
-        <section class="QuestionsClient">
-          <p>Comment ça va ?</p>
-          <p>sd,ncsen</p>
-        </section>
+      <!-- 🟡 QUESTIONS SLIDER -->
+      <section class="screenDisplay">
+        <div class="slider-container">
+          <div class="QuestionsClient">
+            <p class="userTextQuestions"></p>
+          </div>
 
-        <section class="ResponsAuto">
-          <p>ca va Merci et vous ?</p>
-        </section>
+          <!-- 🟡 RÉPONSES AUTOMATIQUES -->
+          <div class="ResponsAuto"></div>
+          <p class="chatBotReturn"></p>
+        </div>
       </section>
-
-      <div class="input">
+      <!-- 🟡 INPUT UTILISATEUR -->
+      <div class="input-container">
         <input
           type="text"
-          name="text"
-          placeholder="entrer un texte"
+          placeholder="Entrez une question..."
           class="inputText"
         />
+        <button class="valideQ">Envoyer</button>
       </div>
     </main>
   </body>
