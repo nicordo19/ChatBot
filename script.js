@@ -22,16 +22,16 @@ function getValueInput() {
   // 🟢 Créer l'élément pour afficher la question de l'utilisateur
   let userMessage = document.querySelector("p");
   userMessage.classList.add("userTextQuestions");
-  userMessage.textContent = "👤 " + inputText.value;
+  userMessage.textContent = inputText.value;
 
   // 🟢 Créer l'élément pour afficher la réponse du chatbot
   let botMessage = document.createElement("p");
   botMessage.classList.add("chatBotReturn");
 
   if (tabs) {
-    botMessage.textContent = "🤖 " + tabs.response;
+    botMessage.textContent = tabs.response;
   } else {
-    botMessage.textContent = "🤖 Je ne comprends pas votre question.";
+    botMessage.textContent = "Je ne comprends pas votre question.";
   }
 
   // Ajouter les messages dans la section d'affichage
