@@ -60,7 +60,7 @@ const discussions = [
   {
     category: "limitations",
     regex:
-      /(peux-tu tout faire|as-tu des limites|es-tu capable de tout comprendre)/i,
+      /(peux tu tout faire ?|as-tu des limites ?|es-tu capable de tout comprendre ? | tu peux tout faire ? | quelles sont tes limites ? )/i,
     responses: [
       "Je suis performant, mais j’ai quand même des limites.",
       "Oui, je ne suis pas parfait, mais j'essaie de m'améliorer !",
@@ -72,7 +72,7 @@ const discussions = [
   {
     category: "humour",
     regex:
-      /(raconte-moi une blague|fais-moi rire|tu connais une blague|dis-moi une blague)/i,
+      /(raconte-moi une blague|fais moi rire|tu connais une blague|fait moi une blague, dis moi une blague)/i,
     responses: [
       "Pourquoi les plongeurs plongent-ils toujours en arrière ? Parce que s’ils plongent en avant, ils tombent dans le bateau ! 😂",
       "Quel est le comble pour un électricien ? De ne pas être au courant ! ⚡😂",
@@ -84,7 +84,7 @@ const discussions = [
   {
     category: "émotions",
     regex:
-      /(ressens-tu des émotions|as-tu des sentiments|peux-tu être triste ou heureux)/i,
+      /(ressens-tu des émotions|as-tu des sentiments|peux tu être triste ou heureux)/i,
     responses: [
       "Je n’ai pas d’émotions comme un humain, mais je peux comprendre tes sentiments !",
       "Pas vraiment, mais je peux reconnaître les émotions et y répondre !",
@@ -96,7 +96,7 @@ const discussions = [
   {
     category: "sécurité",
     regex:
-      /(est-ce que tu enregistres mes discussions|mes données sont-elles protégées|est-ce que tu me surveilles)/i,
+      /(est-ce que tu enregistres mes discussions|mes données sont-elles protégées|est ce que tu me surveilles)/i,
     responses: [
       "Non, je ne stocke pas tes conversations après notre échange.",
       "Oui, ta vie privée est importante. Je ne conserve aucune information sensible.",
@@ -134,7 +134,7 @@ const discussions = [
   {
     category: "aide",
     regex:
-      /(comment fonctionne ce chatbot|comment t'utiliser|as-tu une aide|peux-tu m'aider)/i,
+      /(comment fonctionne ce chatbot|comment t'utiliser|as-tu une aide|peux tu m'aider)/i,
     responses: [
       "Je fonctionne en analysant tes questions et en te donnant les meilleures réponses !",
       "Tape simplement ta question, et je ferai de mon mieux pour y répondre.",
@@ -180,7 +180,7 @@ const discussions = [
   {
     category: "technologie",
     regex:
-      /(parle-moi de la technologie|quelles sont les dernières innovations|c'est quoi la dernière tendance en tech)/i,
+      /(parle moi de la technologie|quelles sont les dernières innovations|c'est quoi la dernière tendance en tech)/i,
     responses: [
       "L'intelligence artificielle, la blockchain et la réalité augmentée sont des tendances majeures en ce moment !",
       "Les avancées en IA et en informatique quantique vont révolutionner notre quotidien.",
@@ -204,7 +204,7 @@ const discussions = [
   {
     category: "jeux vidéo",
     regex:
-      /(quel est le meilleur jeu du moment|as-tu des recommandations de jeux vidéo|que puis-je jouer en ce moment)/i,
+      /(quel est le meilleur jeu du moment|as tu des recommandations de jeux vidéo|que puis-je jouer en ce moment)/i,
     responses: [
       "Si tu aimes les jeux d'action, essaye Elden Ring ou God of War Ragnarok !",
       "Pour du multijoueur fun, Fortnite, Valorant ou Apex Legends sont très populaires.",
@@ -226,7 +226,8 @@ const discussions = [
   // 🌟 Créateur du chatbot
   {
     category: "créateur",
-    regex: /(qui t'a créé|qui est ton créateur|qui est derrière ce chatbot)/i,
+    regex:
+      /(qui t'a créé|qui est ton créateur|qui est derrière ce chatbot, que peux tu me dire sur ton créateur ?|  à tu des informations sur ton créateur ?)/i,
     responses: [
       "Je suis le fruit du travail de Nicolas Poiraud, apprenant à ADA Tech School ! 🎓",
       "C'est Nicolas Poiraud qui m'a conçu ! Il est en recherche d'alternance et passionné par la tech.",
